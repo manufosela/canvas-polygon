@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+    #demo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    canvas-polygon {
+      margin: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../canvas-polygon.js';
+
+    render(
+      html`
+        <canvas-polygon size="200" sides="4" bg-color="red"></canvas-polygon>
+        <canvas-polygon size="200" sides="3" bg-color="green"></canvas-polygon>
+        <canvas-polygon size="200" sides="5" bg-color="blue"></canvas-polygon>
+        <canvas-polygon size="200" sides="6" bg-color="yellow"></canvas-polygon>
+        <canvas-polygon size="200" sides="25" bg-color="orange"></canvas-polygon>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>

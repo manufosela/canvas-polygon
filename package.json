@@ -1,5 +1,5 @@
 {
-  "name": "canvas-polygon",
+  "name": "@manufosela/canvas-polygon",
   "description": "Webcomponent canvas-polygon following open-wc recommendations to draw polygons on a canvas",
   "license": "Apache-2.0",
   "author": "@manufosela",

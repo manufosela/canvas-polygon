@@ -1,6 +1,7 @@
 # \<canvas-polygon>
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+This webcomponent draw polygons on a canvas.
+This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation
 
 ## Installation
 
@@ -16,7 +17,17 @@ npm i canvas-polygon
 </script>
 
 <canvas-polygon></canvas-polygon>
+
+<canvas-polygon size="100" sides="3" line-width="4" bg-color="cyan"></canvas-polygon>
 ```
+
+## Attributtes
+
+ * **size** - The size of the canvas element in pixels.
+ * **sides** - The number of sides of the polygon to render.
+ * **line-width** - The width of the polygon's stroke in pixels.
+ * **bg-color** - The background color of the canvas element.
+ * **offset-rotation** - The rotation offset of the polygon in radians.
 
 ## Linting and formatting
 

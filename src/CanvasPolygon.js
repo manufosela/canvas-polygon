@@ -28,8 +28,9 @@ export class CanvasPolygon extends LitElement {
     this.lineWidth = 1;
     this.bgColor = "transparent";
     this.offsetRotation = 0;
-    this.offsetRotationOptions = [Math.PI / 6, Math.PI / 4, -Math.PI / 2];
-    this.canvas = null;
+
+    this._offsetRotationOptions = [Math.PI / 6, Math.PI / 4, -Math.PI / 2];
+    this._canvas = null;
     this.ctx = null;
   }
 
@@ -46,12 +47,12 @@ export class CanvasPolygon extends LitElement {
   firstUpdated() {
     super.firstUpdated();
     if (this.offsetRotation === 0) {
-      this.offsetRotation = this.offsetRotationOptions[this.sides - 3] || 0;
+      this.offsetRotation = this._offsetRotationOptions[this.sides - 3] || 0;
     }
-    this.canvas = this.shadowRoot.querySelector("canvas");
-    this.canvas.width = this.width;
-    this.canvas.height = this.height;
-    this.ctx = this.canvas.getContext("2d");
+    this._canvas = this.shadowRoot.querySelector("canvas");
+    this._canvas.width = this.width;
+    this._canvas.height = this.height;
+    this.ctx = this._canvas.getContext("2d");
     this.ctx.strokeStyle = "black";
     this.ctx.lineWidth = this.lineWidth;
     this.drawShape();

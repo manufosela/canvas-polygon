@@ -2,7 +2,7 @@
   "name": "canvas-polygon",
   "description": "Webcomponent canvas-polygon following open-wc recommendations to draw polygons on a canvas",
   "license": "Apache-2.0",
-  "author": "canvas-polygon",
+  "author": "@manufosela",
   "version": "1.0.0",
   "main": "canvas-polygon.js",
   "module": "canvas-polygon.js",
@@ -16,6 +16,18 @@
     "storybook": "npm run analyze -- --exclude dist && web-dev-server -c .storybook/server.mjs",
     "storybook:build": "npm run analyze -- --exclude dist && build-storybook"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manufosela/canvas-polygon"
+  },
+  "keywords": [
+    "webcomponent",
+    "lit-element"
+  ],
+  "bugs": {
+    "url": "https://github.com/manufosela/canvas-polygon/issues"
+  },
+  "homepage": "https://github.com/manufosela/canvas-polygon#readme",
   "dependencies": {
     "lit": "^2.0.2"
   },
